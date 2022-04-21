@@ -1,0 +1,29 @@
+<h2>liste des tuteurs</h2>
+<table class="table" border="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>email</th>
+        <th>Specialite</th>
+        <th>Suppression</th>
+        <th>Modification</th>
+    </tr>
+    <tr *ngFor="let tuteur of tuteurs">
+      <td>{{tuteur.id}}</td>
+      <td>{{tuteur.name}}</td>
+      <td>{{tuteur.email}}</td>
+      <td>{{tuteur.specialite}}</td>
+
+ <td>
+     <button (click)="deleteTuteur(tuteur)" type="button" class="btn btn-danger">
+         supprimer
+     </button>
+ </td>    
+
+ <td>
+     <button (click)="updateTuteur(tuteur)" type="button" class="btn btn-warning">
+         modifier
+     </button>
+ </td>
+    </tr>
+</table>

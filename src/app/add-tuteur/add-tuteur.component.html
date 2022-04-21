@@ -1,0 +1,15 @@
+<form #myform="ngForm" (ngSubmit)="createTuteur(myform)">
+    <div class="form-group">
+    <label for="tuteurName">tuteur Name </label>
+    <input ngModel name="tuteurName" size="20" type="text" class="form-control" id="tuteurName" />
+</div>
+<div class="form-group">
+<label for="tuteurEmail">Tuteur Email </label>
+<input ngModel name="tuteurEmail" size="20" type="text" class="form-control" id="tuteurEmail" />
+</div>
+<div class="form-group">
+<label for="specialite">specialite </label>
+<input ngModel name="tuteurSpecialite" size="20" type="text" class="form-control" id="tuteurSpecialite" />
+</div>
+<button class="btn btn-primary">Ajouter</button>
+</form>
